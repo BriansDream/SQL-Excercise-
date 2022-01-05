@@ -16,3 +16,6 @@ SELECT * FROM tableName;
 -- use WHERE keyword (we can specific choose line that have specifi data (for example "food");
 -- use = to refer where line that you want to get from table in database
 WHERE yourColumnName = "value"
+-- get data from all column from YOURTABLE WHERE yourColumnName contain "Seken";
+SELECT * from yourTableName WHERE yourColumnName = "Seken";
+
