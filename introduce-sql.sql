@@ -8,18 +8,6 @@
 -- Analisis data dengan SQL = penggunaan statistick untuk mengolah data yang tersimpan didalam database
 
 
--- ====================================================================
--- Query adalah cara database berkomunikasi
--- (user query data (meminta data) and database mengirimkan data yang diminta user) 
-
--- Untuk mendapatkan data dari table dalam database
-SELECT tableName FROM databaseName
--- for select some tables using koma 
-SELECT tableName, anotherTable FROM databaseName
---  get data from all table in database
-SELECT * FROM databaseName
--- Untuk menyelesaikan query sql (mengakhiri statement using semicolon)
-SELECT * FROM databaseName;
 
 -- =========================================================
 
@@ -67,3 +55,23 @@ WHERE id="urutan ke berapa?";
 -- Specify record that u want to update using WHERE keyword
 -- If you're not specify record (not using WHERE)
 --  then all data in the column gonna be updated;
+
+-- BEFORE RUN UPDATE you have to check your current data, because you cannot access past data after did UPDATE
+
+
+-- ===============================================================
+
+-- DELETE USELESS DATA use (DELETE) keyword;
+-- If we delete data you cannot access and restore that data anymore
+-- so make sure you've check that data before delete
+
+DELETE FROM tableName 
+WHERE id=7; (id order);
+
+-- be carefull if you're not specify data that u want to delete
+-- using WHERE keyword, all data in your table gonna be deleted;
+
+DELETE FROM tableName; ==> this will be dangerouse (all of data gonna be disapear);
+
+
+-- ===================================================
